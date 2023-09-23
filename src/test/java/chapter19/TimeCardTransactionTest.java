@@ -2,12 +2,9 @@ package chapter19;
 
 import chapter19.classification.HourlyClassification;
 import chapter19.classification.PaymentClassification;
-import chapter19.transaction.AddCommissionedEmployee;
 import chapter19.transaction.AddHourlyEmployee;
-import chapter19.transaction.DeleteEmployeeTransaction;
+import chapter19.transaction.TimeCardTransaction;
 import org.junit.jupiter.api.Test;
-
-import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,5 +1,7 @@
-package chapter19;
+package chapter19.transaction;
 
+import chapter19.Employee;
+import chapter19.PayrollDatabase;
 import chapter19.classification.HourlyClassification;
 import chapter19.classification.PaymentClassification;
 import chapter19.transaction.Transaction;
