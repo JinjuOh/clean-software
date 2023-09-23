@@ -1,5 +1,6 @@
 package chapter19;
 
+import chapter19.affilliation.Affiliation;
 import chapter19.classification.PaymentClassification;
 import chapter19.paymentmethod.PaymentMethod;
 import chapter19.schedule.PaymentSchedule;
@@ -12,6 +13,7 @@ public class Employee {
     private PaymentClassification classification;
     private PaymentSchedule schedule;
     private PaymentMethod method;
+    private Affiliation affiliation;
 
 
     public Employee(int empId, String name, String address) {
@@ -66,5 +68,13 @@ public class Employee {
 
     public void setMethod(PaymentMethod method) {
         this.method = method;
+    }
+
+    public Affiliation getAffiliation() {
+        return affiliation;
+    }
+
+    public void setAffiliation(Affiliation affiliation) {
+        this.affiliation = affiliation;
     }
 }
