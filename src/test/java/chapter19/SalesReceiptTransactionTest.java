@@ -4,6 +4,8 @@ import chapter19.classification.CommissionedClassification;
 import chapter19.classification.PaymentClassification;
 import chapter19.transaction.AddCommissionedEmployee;
 import chapter19.transaction.SalesReceiptTransaction;
+import chapter19.vo.SalesReceipt;
+import chapter19.vo.TimeCard;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -26,5 +28,9 @@ public class SalesReceiptTransactionTest {
         PaymentClassification pc = e.getClassification();
         CommissionedClassification cc = (CommissionedClassification) pc;
         assertEquals(pc, cc);
+
+        SalesReceipt sr = cc.getSalesReceipt(2);
+        assertNotNull(sr);
+        assertEquals(3, sr.getAmount());
     }
 }

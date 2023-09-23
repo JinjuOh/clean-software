@@ -5,6 +5,7 @@ import chapter19.PayrollDatabase;
 import chapter19.classification.CommissionedClassification;
 import chapter19.classification.HourlyClassification;
 import chapter19.classification.PaymentClassification;
+import chapter19.vo.SalesReceipt;
 
 public class SalesReceiptTransaction implements Transaction {
     private int itsEmpId;
@@ -24,6 +25,7 @@ public class SalesReceiptTransaction implements Transaction {
             PaymentClassification pc = e.getClassification();
             try {
                 CommissionedClassification cc = (CommissionedClassification) pc;
+                cc.addSalesReceipt(new SalesReceipt(itsEmpId, itsDate, amount));
             } catch (Exception exception) {
                 throw new Exception("Tried to add Sales-Receipt to non-commissioned employee");
             }
