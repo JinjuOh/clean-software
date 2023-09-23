@@ -11,11 +11,7 @@ public class PayrollDatabase {
     }
 
     public static Employee getEmployee(int empId) {
-        Employee e = itsEmployee.get(empId);
-        if(null == e) {
-            return new Employee(0, "Jinju", "Korea");
-        }
-        return e;
+        return itsEmployee.get(empId);
     }
 
     public static void addEmployee(int empId, Employee employee) {
@@ -24,5 +20,13 @@ public class PayrollDatabase {
 
     public static void clear() {
         itsEmployee.clear();
+    }
+
+    public static void deleteEmployee(int itsEmpId) {
+        itsEmployee.remove(itsEmpId);
+    }
+
+    public static Map<Integer, Employee> getAllEmployee() {
+        return itsEmployee;
     }
 }
