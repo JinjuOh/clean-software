@@ -1,12 +1,20 @@
 package chapter19.classification;
 
-import chapter19.TimeCard;
+import chapter19.vo.TimeCard;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class HourlyClassification extends PaymentClassification {
     private double hourlyRate;
+    private Map<Long, TimeCard> timecards = new HashMap<>();
 
-    public TimeCard getTimeCard(int time) {
-        // 원래는 DB에서 해당 사용자의 날짜로 검색하여야함
-        return new TimeCard(time, 8.0);
+    public void addTimeCard(TimeCard timeCard) {
+        timecards.put(timeCard.getItsDate(), timeCard);
+    }
+
+    public TimeCard getTimeCard(long time) {
+        return timecards.get(time);
     }
 }

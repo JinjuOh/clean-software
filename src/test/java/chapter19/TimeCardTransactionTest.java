@@ -4,6 +4,7 @@ import chapter19.classification.HourlyClassification;
 import chapter19.classification.PaymentClassification;
 import chapter19.transaction.AddHourlyEmployee;
 import chapter19.transaction.TimeCardTransaction;
+import chapter19.vo.TimeCard;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

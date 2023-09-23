@@ -5,6 +5,7 @@ import chapter19.PayrollDatabase;
 import chapter19.classification.HourlyClassification;
 import chapter19.classification.PaymentClassification;
 import chapter19.transaction.Transaction;
+import chapter19.vo.TimeCard;
 
 public class TimeCardTransaction implements Transaction {
 
@@ -25,6 +26,7 @@ public class TimeCardTransaction implements Transaction {
             PaymentClassification pc = e.getClassification();
             try {
                 HourlyClassification hc = (HourlyClassification) pc;
+                hc.addTimeCard(new TimeCard(itsDate, itsHours));
             } catch (Exception exception) {
                 throw new Exception("Tried to add timecard to non-hourly employee");
             }

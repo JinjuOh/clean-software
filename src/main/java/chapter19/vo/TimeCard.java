@@ -1,4 +1,4 @@
-package chapter19;
+package chapter19.vo;
 
 public class TimeCard {
     private long itsDate;
