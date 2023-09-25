@@ -5,21 +5,18 @@ import chapter19.classification.PaymentClassification;
 import chapter19.schedule.PaymentSchedule;
 import chapter19.schedule.WeeklySchedule;
 
-public class AddHourlyEmployee extends AddEmployeeTransaction {
+public class ChangeHourlyTransaction extends ChangeClassificationTransaction {
 
-    private double hourlyRate;
+    private double hourlyDate;
 
-    public AddHourlyEmployee() {
-    }
-
-    public AddHourlyEmployee(int itsEmpId, String itsName, String itsAddress, double hourlyRate) {
-        super(itsEmpId, itsName, itsAddress);
-        this.hourlyRate = hourlyRate;
+    public ChangeHourlyTransaction(int empId, double hourlyDate) {
+        super(empId);
+        this.hourlyDate = hourlyDate;
     }
 
     @Override
     public PaymentClassification getClassification() {
-        return new HourlyClassification(hourlyRate);
+        return new HourlyClassification(hourlyDate);
     }
 
     @Override
