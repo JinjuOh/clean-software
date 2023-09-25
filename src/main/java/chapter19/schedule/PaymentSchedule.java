@@ -1,4 +1,4 @@
 package chapter19.schedule;
 
-public class PaymentSchedule {
+public interface PaymentSchedule {
 }

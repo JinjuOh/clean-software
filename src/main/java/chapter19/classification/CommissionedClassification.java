@@ -5,7 +5,7 @@ import chapter19.vo.SalesReceipt;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CommissionedClassification extends PaymentClassification {
+public class CommissionedClassification implements PaymentClassification {
     private double salary;
     private double rate;
     private Map<Integer, SalesReceipt> salesReceipts = new HashMap<>();

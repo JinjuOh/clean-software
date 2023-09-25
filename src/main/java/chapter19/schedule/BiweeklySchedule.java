@@ -1,4 +1,4 @@
 package chapter19.schedule;
 
-public class BiweeklySchedule extends PaymentSchedule {
+public class BiweeklySchedule implements PaymentSchedule {
 }

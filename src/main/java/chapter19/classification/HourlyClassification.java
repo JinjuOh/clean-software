@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class HourlyClassification extends PaymentClassification {
+public class HourlyClassification implements PaymentClassification {
     private double rate;
     private Map<Long, TimeCard> timecards = new HashMap<>();
 
