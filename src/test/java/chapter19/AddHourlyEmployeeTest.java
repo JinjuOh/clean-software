@@ -2,14 +2,11 @@ package chapter19;
 
 import chapter19.classification.HourlyClassification;
 import chapter19.classification.PaymentClassification;
-import chapter19.classification.SalariedClassification;
 import chapter19.paymentmethod.HoldMethod;
 import chapter19.paymentmethod.PaymentMethod;
-import chapter19.schedule.MonthlySchedule;
 import chapter19.schedule.PaymentSchedule;
 import chapter19.schedule.WeeklySchedule;
-import chapter19.transaction.AddHourlyEmployee;
-import chapter19.transaction.AddSalariedEmployee;
+import chapter19.transaction.add.AddHourlyEmployee;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

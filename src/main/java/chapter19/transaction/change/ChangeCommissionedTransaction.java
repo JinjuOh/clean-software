@@ -1,10 +1,8 @@
-package chapter19.transaction;
+package chapter19.transaction.change;
 
 import chapter19.classification.CommissionedClassification;
 import chapter19.classification.PaymentClassification;
-import chapter19.classification.SalariedClassification;
 import chapter19.schedule.BiweeklySchedule;
-import chapter19.schedule.MonthlySchedule;
 import chapter19.schedule.PaymentSchedule;
 
 public class ChangeCommissionedTransaction extends ChangeClassificationTransaction {

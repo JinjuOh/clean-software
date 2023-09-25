@@ -6,7 +6,7 @@ import chapter19.paymentmethod.HoldMethod;
 import chapter19.paymentmethod.PaymentMethod;
 import chapter19.schedule.MonthlySchedule;
 import chapter19.schedule.PaymentSchedule;
-import chapter19.transaction.AddSalariedEmployee;
+import chapter19.transaction.add.AddSalariedEmployee;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

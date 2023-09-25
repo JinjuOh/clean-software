@@ -1,7 +1,7 @@
 package chapter19;
 
-import chapter19.transaction.AddCommissionedEmployee;
-import chapter19.transaction.DeleteEmployeeTransaction;
+import chapter19.transaction.add.AddCommissionedEmployee;
+import chapter19.transaction.delete.DeleteEmployeeTransaction;
 import org.junit.jupiter.api.Test;
 
 import java.util.Map;

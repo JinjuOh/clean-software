@@ -1,4 +1,4 @@
-package chapter19.transaction;
+package chapter19.transaction.add;
 
 import chapter19.Employee;
 import chapter19.PayrollDatabase;
@@ -6,6 +6,7 @@ import chapter19.classification.PaymentClassification;
 import chapter19.paymentmethod.HoldMethod;
 import chapter19.paymentmethod.PaymentMethod;
 import chapter19.schedule.PaymentSchedule;
+import chapter19.transaction.Transaction;
 
 public abstract class AddEmployeeTransaction implements Transaction {
 

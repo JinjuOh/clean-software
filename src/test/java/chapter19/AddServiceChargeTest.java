@@ -1,10 +1,10 @@
 package chapter19;
 
 import chapter19.affilliation.UnionAffiliation;
-import chapter19.transaction.AddHourlyEmployee;
+import chapter19.transaction.add.AddHourlyEmployee;
 import static org.junit.jupiter.api.Assertions.*;
 
-import chapter19.transaction.ServiceChargeTransaction;
+import chapter19.transaction.serviceCharge.ServiceChargeTransaction;
 import chapter19.vo.ServiceCharge;
 import org.junit.jupiter.api.Test;
 

@@ -4,8 +4,8 @@ import chapter19.classification.HourlyClassification;
 import chapter19.classification.PaymentClassification;
 import chapter19.schedule.PaymentSchedule;
 import chapter19.schedule.WeeklySchedule;
-import chapter19.transaction.AddCommissionedEmployee;
-import chapter19.transaction.ChangeHourlyTransaction;
+import chapter19.transaction.add.AddCommissionedEmployee;
+import chapter19.transaction.change.ChangeHourlyTransaction;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

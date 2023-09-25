@@ -1,15 +1,12 @@
 package chapter19;
 
 import chapter19.classification.CommissionedClassification;
-import chapter19.classification.HourlyClassification;
 import chapter19.classification.PaymentClassification;
 import chapter19.paymentmethod.HoldMethod;
 import chapter19.paymentmethod.PaymentMethod;
 import chapter19.schedule.BiweeklySchedule;
 import chapter19.schedule.PaymentSchedule;
-import chapter19.schedule.WeeklySchedule;
-import chapter19.transaction.AddCommissionedEmployee;
-import chapter19.transaction.AddHourlyEmployee;
+import chapter19.transaction.add.AddCommissionedEmployee;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

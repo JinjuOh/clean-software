@@ -1,4 +1,4 @@
-package chapter19.transaction;
+package chapter19.transaction.change;
 
 import chapter19.classification.HourlyClassification;
 import chapter19.classification.PaymentClassification;

@@ -1,7 +1,8 @@
-package chapter19.transaction;
+package chapter19.transaction.change;
 
 import chapter19.Employee;
 import chapter19.PayrollDatabase;
+import chapter19.transaction.Transaction;
 
 public abstract class ChangeEmployeeTransaction implements Transaction {
 

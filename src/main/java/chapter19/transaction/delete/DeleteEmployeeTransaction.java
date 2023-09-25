@@ -1,6 +1,7 @@
-package chapter19.transaction;
+package chapter19.transaction.delete;
 
 import chapter19.PayrollDatabase;
+import chapter19.transaction.Transaction;
 
 public class DeleteEmployeeTransaction implements Transaction {
 

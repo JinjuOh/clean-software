@@ -1,9 +1,10 @@
-package chapter19.transaction;
+package chapter19.transaction.serviceCharge;
 
 import chapter19.Employee;
 import chapter19.PayrollDatabase;
 import chapter19.affilliation.Affiliation;
 import chapter19.affilliation.UnionAffiliation;
+import chapter19.transaction.Transaction;
 
 public class ServiceChargeTransaction implements Transaction {
     private int memeberId;

@@ -1,11 +1,10 @@
-package chapter19.transaction;
+package chapter19.transaction.change;
 
-import chapter19.classification.HourlyClassification;
 import chapter19.classification.PaymentClassification;
 import chapter19.classification.SalariedClassification;
 import chapter19.schedule.MonthlySchedule;
 import chapter19.schedule.PaymentSchedule;
-import chapter19.schedule.WeeklySchedule;
+import chapter19.transaction.change.ChangeClassificationTransaction;
 
 public class ChangeSalariedTransaction extends ChangeClassificationTransaction {
 

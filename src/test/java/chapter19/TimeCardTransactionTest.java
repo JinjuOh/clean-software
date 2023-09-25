@@ -2,8 +2,8 @@ package chapter19;
 
 import chapter19.classification.HourlyClassification;
 import chapter19.classification.PaymentClassification;
-import chapter19.transaction.AddHourlyEmployee;
-import chapter19.transaction.TimeCardTransaction;
+import chapter19.transaction.add.AddHourlyEmployee;
+import chapter19.transaction.timeCard.TimeCardTransaction;
 import chapter19.vo.TimeCard;
 import org.junit.jupiter.api.Test;
 

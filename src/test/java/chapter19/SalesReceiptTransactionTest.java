@@ -2,10 +2,9 @@ package chapter19;
 
 import chapter19.classification.CommissionedClassification;
 import chapter19.classification.PaymentClassification;
-import chapter19.transaction.AddCommissionedEmployee;
-import chapter19.transaction.SalesReceiptTransaction;
+import chapter19.transaction.add.AddCommissionedEmployee;
+import chapter19.transaction.salesReceipt.SalesReceiptTransaction;
 import chapter19.vo.SalesReceipt;
-import chapter19.vo.TimeCard;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
