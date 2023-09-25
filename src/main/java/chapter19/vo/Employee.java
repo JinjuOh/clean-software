@@ -1,4 +1,4 @@
-package chapter19;
+package chapter19.vo;
 
 import chapter19.affilliation.Affiliation;
 import chapter19.classification.PaymentClassification;

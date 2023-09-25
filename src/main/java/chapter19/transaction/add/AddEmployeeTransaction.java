@@ -1,6 +1,6 @@
 package chapter19.transaction.add;
 
-import chapter19.Employee;
+import chapter19.vo.Employee;
 import chapter19.PayrollDatabase;
 import chapter19.classification.PaymentClassification;
 import chapter19.paymentmethod.HoldMethod;

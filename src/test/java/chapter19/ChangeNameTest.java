@@ -2,6 +2,7 @@ package chapter19;
 
 import chapter19.transaction.add.AddHourlyEmployee;
 import chapter19.transaction.change.ChangeNameTransaction;
+import chapter19.vo.Employee;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

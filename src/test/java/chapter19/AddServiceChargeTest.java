@@ -5,6 +5,7 @@ import chapter19.transaction.add.AddHourlyEmployee;
 import static org.junit.jupiter.api.Assertions.*;
 
 import chapter19.transaction.serviceCharge.ServiceChargeTransaction;
+import chapter19.vo.Employee;
 import chapter19.vo.ServiceCharge;
 import org.junit.jupiter.api.Test;
 

@@ -1,6 +1,6 @@
 package chapter19.transaction.change;
 
-import chapter19.Employee;
+import chapter19.vo.Employee;
 import chapter19.PayrollDatabase;
 import chapter19.affilliation.Affiliation;
 import chapter19.affilliation.UnionAffiliation;

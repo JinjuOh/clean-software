@@ -1,6 +1,6 @@
 package chapter19.transaction.change;
 
-import chapter19.Employee;
+import chapter19.vo.Employee;
 
 public class ChangeNameTransaction extends ChangeEmployeeTransaction {
 

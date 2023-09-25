@@ -1,19 +1,14 @@
 package chapter19;
 
-import chapter19.classification.HourlyClassification;
-import chapter19.classification.PaymentClassification;
 import chapter19.paymentmethod.DirectMethod;
 import chapter19.paymentmethod.HoldMethod;
 import chapter19.paymentmethod.MailMethod;
 import chapter19.paymentmethod.PaymentMethod;
-import chapter19.schedule.PaymentSchedule;
-import chapter19.schedule.WeeklySchedule;
-import chapter19.transaction.add.AddCommissionedEmployee;
 import chapter19.transaction.add.AddSalariedEmployee;
 import chapter19.transaction.change.ChangeDirectTransaction;
 import chapter19.transaction.change.ChangeHoldTransaction;
-import chapter19.transaction.change.ChangeHourlyTransaction;
 import chapter19.transaction.change.ChangeMailTransaction;
+import chapter19.vo.Employee;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

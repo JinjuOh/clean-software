@@ -1,9 +1,8 @@
 package chapter19.transaction.salesReceipt;
 
-import chapter19.Employee;
+import chapter19.vo.Employee;
 import chapter19.PayrollDatabase;
 import chapter19.classification.CommissionedClassification;
-import chapter19.classification.HourlyClassification;
 import chapter19.classification.PaymentClassification;
 import chapter19.transaction.Transaction;
 import chapter19.vo.SalesReceipt;

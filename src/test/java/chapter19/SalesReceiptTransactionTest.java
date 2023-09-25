@@ -4,6 +4,7 @@ import chapter19.classification.CommissionedClassification;
 import chapter19.classification.PaymentClassification;
 import chapter19.transaction.add.AddCommissionedEmployee;
 import chapter19.transaction.salesReceipt.SalesReceiptTransaction;
+import chapter19.vo.Employee;
 import chapter19.vo.SalesReceipt;
 import org.junit.jupiter.api.Test;
 
