@@ -15,6 +15,6 @@ public abstract class ChangeClassificationTransaction extends ChangeEmployeeTran
         e.setSchedule(getSchedule());
     }
 
-    public abstract PaymentClassification getClassification();
-    public abstract PaymentSchedule getSchedule();
+    abstract PaymentClassification getClassification();
+    abstract PaymentSchedule getSchedule();
 }

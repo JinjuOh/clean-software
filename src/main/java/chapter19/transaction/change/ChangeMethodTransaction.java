@@ -15,5 +15,5 @@ public abstract class ChangeMethodTransaction extends ChangeEmployeeTransaction 
         e.setMethod(getMethod());
     }
 
-    public abstract PaymentMethod getMethod();
+    abstract PaymentMethod getMethod();
 }
