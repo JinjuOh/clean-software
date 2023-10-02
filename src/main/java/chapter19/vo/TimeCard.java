@@ -1,19 +1,16 @@
 package chapter19.vo;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class TimeCard {
     private long itsDate;
-    private double itsHours;
+    private double hours;
 
-    public TimeCard(long itsDate, double itsHours) {
+    public TimeCard(long itsDate, double hours) {
         this.itsDate = itsDate;
-        this.itsHours = itsHours;
-    }
-
-    public long getItsDate() {
-        return itsDate;
-    }
-
-    public double getHours() {
-        return itsHours;
+        this.hours = hours;
     }
 }
