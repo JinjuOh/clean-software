@@ -30,6 +30,6 @@ public class CommissionedClassification implements PaymentClassification {
 
     @Override
     public double calculatePay(PayCheck pc) {
-        return 1000;
+        return 0;
     }
 }

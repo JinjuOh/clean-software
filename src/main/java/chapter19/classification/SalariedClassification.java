@@ -15,6 +15,6 @@ public class SalariedClassification implements PaymentClassification {
 
     @Override
     public double calculatePay(PayCheck pc) {
-        return 1000;
+        return salary;
     }
 }

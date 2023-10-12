@@ -30,7 +30,7 @@ public class Employee {
     }
 
     public boolean isPayDate(LocalDate date) {
-        return (date == date.withDayOfMonth(date.lengthOfMonth()));
+        return schedule.isPayDate(date);
     }
 
     public void setPayDay(PayCheck pc) {
