@@ -1,10 +1,15 @@
 package chapter19.classification;
 
+import chapter19.transaction.payday.PayCheck;
 import chapter19.vo.SalesReceipt;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Getter
+@Setter
 public class CommissionedClassification implements PaymentClassification {
     private double salary;
     private double rate;
@@ -23,19 +28,8 @@ public class CommissionedClassification implements PaymentClassification {
         return salesReceipts.get(empId);
     }
 
-    public double getRate() {
-        return rate;
-    }
-
-    public void setRate(double rate) {
-        this.rate = rate;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
+    @Override
+    public double calculatePay(PayCheck pc) {
+        return 1000;
     }
 }

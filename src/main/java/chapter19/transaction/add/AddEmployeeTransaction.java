@@ -1,5 +1,8 @@
 package chapter19.transaction.add;
 
+import chapter19.affilliation.Affiliation;
+import chapter19.affilliation.NoAffiliation;
+import chapter19.affilliation.UnionAffiliation;
 import chapter19.vo.Employee;
 import chapter19.PayrollDatabase;
 import chapter19.classification.PaymentClassification;
@@ -31,10 +34,12 @@ public abstract class AddEmployeeTransaction implements Transaction {
         PaymentClassification pc = getClassification();
         PaymentSchedule ps = getSchedule();
         PaymentMethod pm = new HoldMethod();
+        Affiliation af = new NoAffiliation();
         Employee e = new Employee(itsEmpId, itsName, itsAddress);
         e.setClassification(pc);
         e.setSchedule(ps);
         e.setMethod(pm);
+        e.setAffiliation(af);
         PayrollDatabase.addEmployee(itsEmpId, e);
     };
 }

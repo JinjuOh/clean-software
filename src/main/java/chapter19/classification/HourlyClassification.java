@@ -1,11 +1,15 @@
 package chapter19.classification;
 
+import chapter19.transaction.payday.PayCheck;
 import chapter19.vo.TimeCard;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
+@Getter
+@Setter
 public class HourlyClassification implements PaymentClassification {
     private double rate;
     private Map<Long, TimeCard> timecards = new HashMap<>();
@@ -22,11 +26,8 @@ public class HourlyClassification implements PaymentClassification {
         return timecards.get(time);
     }
 
-    public double getRate() {
-        return rate;
-    }
-
-    public void setRate(double rate) {
-        this.rate = rate;
+    @Override
+    public double calculatePay(PayCheck pc) {
+        return 1000;
     }
 }

@@ -1,5 +1,11 @@
 package chapter19.paymentmethod;
 
+import chapter19.transaction.payday.PayCheck;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class DirectMethod implements PaymentMethod {
     private String bank;
     private String account;
@@ -9,19 +15,8 @@ public class DirectMethod implements PaymentMethod {
         this.account = account;
     }
 
-    public String getBank() {
-        return bank;
-    }
+    @Override
+    public void pay(PayCheck pc) {
 
-    public void setBank(String bank) {
-        this.bank = bank;
-    }
-
-    public String getAccount() {
-        return account;
-    }
-
-    public void setAccount(String account) {
-        this.account = account;
     }
 }

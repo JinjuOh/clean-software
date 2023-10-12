@@ -2,7 +2,9 @@ package chapter19;
 
 import chapter19.vo.Employee;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class PayrollDatabase {
@@ -15,6 +17,10 @@ public class PayrollDatabase {
 
     public static Employee getEmployee(int empId) {
         return itsEmployee.get(empId);
+    }
+
+    public static List<Integer> getAllEmployeeIds() {
+        return new ArrayList<>(itsEmployee.keySet());
     }
 
     public static void addEmployee(int empId, Employee employee) {

@@ -1,5 +1,11 @@
 package chapter19.paymentmethod;
 
+import chapter19.transaction.payday.PayCheck;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class MailMethod implements PaymentMethod {
     private String address;
 
@@ -7,11 +13,8 @@ public class MailMethod implements PaymentMethod {
         this.address = address;
     }
 
-    public String getAddress() {
-        return address;
-    }
+    @Override
+    public void pay(PayCheck pc) {
 
-    public void setAddress(String address) {
-        this.address = address;
     }
 }
