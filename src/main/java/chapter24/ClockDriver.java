@@ -1,10 +1,10 @@
 package chapter24;
 
-public class ClockDriver {
+public class ClockDriver implements ClockObserver {
     private TimeSink sink;
 
     public ClockDriver(TimeSource source, TimeSink sink) {
-        source.setDriver(this);
+        source.setObserver(this);
         this.sink = sink;
     }
 

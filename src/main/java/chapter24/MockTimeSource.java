@@ -2,14 +2,14 @@ package chapter24;
 
 public class MockTimeSource implements TimeSource {
 
-    private ClockDriver driver;
+    private ClockObserver observer;
 
     public void setTime(int hours, int minutes, int seconds) {
-        this.driver.update(hours, minutes, seconds);
+        this.observer.update(hours, minutes, seconds);
     }
 
     @Override
-    public void setDriver(ClockDriver driver) {
-        this.driver = driver;
+    public void setObserver(ClockObserver observer) {
+        this.observer = observer;
     }
 }
