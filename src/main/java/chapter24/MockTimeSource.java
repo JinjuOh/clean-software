@@ -1,15 +1,30 @@
 package chapter24;
 
-public class MockTimeSource implements TimeSource {
+public class MockTimeSource extends Subject implements TimeSource {
 
-    TimeSourceImpl timeSource = new TimeSourceImpl();
-
-    @Override
-    public void registerObserver(ClockObserver observer) {
-        timeSource.registerObserver(observer);
-    }
+    private int hours;
+    private int minutes;
+    private int seconds;
 
     public void setTime(int hours, int minutes, int seconds) {
-        timeSource.notify(hours, minutes, seconds);
+        this.hours = hours;
+        this.minutes = minutes;
+        this.seconds = seconds;
+        notifyObservers();
+    }
+
+    @Override
+    public int getHours() {
+        return hours;
+    }
+
+    @Override
+    public int getMinutes() {
+        return minutes;
+    }
+
+    @Override
+    public int getSeconds() {
+        return seconds;
     }
 }

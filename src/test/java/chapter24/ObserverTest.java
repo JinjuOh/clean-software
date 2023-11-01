@@ -4,7 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class ClockDriverTest {
+class ObserverTest {
 
     private MockTimeSource source;
     private MockTimeSink sink;
@@ -12,14 +12,14 @@ class ClockDriverTest {
     @BeforeEach
     public void setUp() {
         source = new MockTimeSource();
-        sink = new MockTimeSink();
+        sink = new MockTimeSink(source);
         source.registerObserver(sink);
     }
 
     @Test
     public void testTimeChange() {
         MockTimeSource source = new MockTimeSource();
-        MockTimeSink sink = new MockTimeSink();
+        MockTimeSink sink = new MockTimeSink(source);
         source.registerObserver(sink);
 
         source.setTime(3, 4, 5);
@@ -31,7 +31,7 @@ class ClockDriverTest {
 
     @Test
     public void testMultipleSinks() {
-        MockTimeSink sink2 = new MockTimeSink();
+        MockTimeSink sink2 = new MockTimeSink(source);
         source.registerObserver(sink2);
 
         source.setTime(12, 13, 14);

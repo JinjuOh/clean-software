@@ -3,16 +3,21 @@ package chapter24;
 import lombok.Getter;
 
 @Getter
-public class MockTimeSink implements ClockObserver {
+public class MockTimeSink implements Observer {
 
     private int hours;
     private int minutes;
     private int seconds;
+    private TimeSource timeSource;
+
+    public MockTimeSink(TimeSource timeSource) {
+        this.timeSource = timeSource;
+    }
 
     @Override
-    public void update(int hours, int minute, int seconds) {
-       this.hours = hours;
-       this.minutes = minute;
-       this.seconds = seconds;
+    public void update() {
+       this.hours = timeSource.getHours();
+       this.minutes = timeSource.getMinutes();
+       this.seconds = timeSource.getSeconds();
     }
 }

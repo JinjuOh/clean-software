@@ -1,5 +1,7 @@
 package chapter24;
 
 public interface TimeSource {
-    public void registerObserver(ClockObserver observer);
+    public int getHours();
+    public int getMinutes();
+    public int getSeconds();
 }
