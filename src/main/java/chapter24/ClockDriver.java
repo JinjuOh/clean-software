@@ -4,7 +4,7 @@ public class ClockDriver implements ClockObserver {
     private TimeSink sink;
 
     public ClockDriver(TimeSource source, TimeSink sink) {
-        source.setObserver(this);
+        source.registerObserver(this);
         this.sink = sink;
     }
 
