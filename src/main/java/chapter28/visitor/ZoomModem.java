@@ -1,8 +1,8 @@
-package chapter28;
+package chapter28.visitor;
 
-public class HayesModem implements Modem {
+public class ZoomModem implements Modem {
 
-    String configurationString = null;
+    int configurationValue = 0;
 
     @Override
     public void dial(String pno) {

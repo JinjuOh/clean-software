@@ -1,6 +1,6 @@
-package chapter28;
+package chapter28.acyclicVisitor.modem;
 
-public class UnixModemConfigurator implements ModemVisitor {
+public class UnixModemConfigurator implements ModemVisitor, HayesModemVisitor, ZoomModemVisitor, ErnieModemVisitor {
 
     @Override
     public void visit(HayesModem modem) {

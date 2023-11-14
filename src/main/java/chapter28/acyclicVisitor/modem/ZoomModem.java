@@ -1,8 +1,8 @@
-package chapter28;
+package chapter28.acyclicVisitor.modem;
 
-public class ErnieModem implements Modem {
+public class ZoomModem implements Modem {
 
-    String internalPattern = null;
+    int configurationValue = 0;
 
     @Override
     public void dial(String pno) {
@@ -25,7 +25,11 @@ public class ErnieModem implements Modem {
     }
 
     public void accept(ModemVisitor v) {
-        v.visit(this);
-    }
+        try {
+            ZoomModemVisitor zv = (ZoomModemVisitor) v;
+            zv.visit(this);
+        } catch (ClassCastException e) {
 
+        }
+    }
 }

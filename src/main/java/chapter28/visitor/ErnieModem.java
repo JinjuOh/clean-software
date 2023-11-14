@@ -1,8 +1,8 @@
-package chapter28;
+package chapter28.visitor;
 
-public class ZoomModem implements Modem {
+public class ErnieModem implements Modem {
 
-    int configurationValue = 0;
+    String internalPattern = null;
 
     @Override
     public void dial(String pno) {
@@ -27,4 +27,5 @@ public class ZoomModem implements Modem {
     public void accept(ModemVisitor v) {
         v.visit(this);
     }
+
 }

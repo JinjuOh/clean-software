@@ -1,4 +1,4 @@
-package chapter28;
+package chapter28.visitor;
 
 public interface ModemVisitor {
     public void visit(HayesModem modem);
